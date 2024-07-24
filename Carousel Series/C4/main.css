@@ -1,0 +1,66 @@
+body {
+  background: #eee;
+}
+.h5 {
+  margin-bottom: 30px;
+}
+.container {
+  width: 80%;
+  margin: 20px auto;
+}
+.carousel {
+  background: #fff;
+  border: 4px solid #333;
+  overflow: hidden;
+  border-radius: 20px;
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+.slider {
+  height: 100%;
+}
+
+.slider section {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  opacity: 0;
+  z-index: 0;
+  transition: all 2s linear;
+}
+.slider section:nth-child(1) {
+  opacity: 1;
+  z-index: 2;
+  background: #fff;
+}
+.slider section:nth-child(2) {
+  background: violet;
+}
+.slider section:nth-child(3) {
+  background: tomato;
+}
+.controls button.next {
+  right: 20px;
+}
+.controls button.prev {
+  left: 20px;
+}
+.controls button {
+  position: absolute;
+  z-index: 3;
+  font-size: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: #333;
+}  
